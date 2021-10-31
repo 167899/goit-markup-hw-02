@@ -3,6 +3,7 @@
   --second-text-color: #757575;
   --hero-text-color: #fff;
   --accent-color: #2196f3;
+  --bgc-hero: #2f303a;
   --font-size: 14px;
 }
 
@@ -44,11 +45,16 @@ body {
   color: var(--main-text-color);
 }
 .list-menu .item:hover,
-.contacts-list .item:hover {
+.list-menu .item:focus,
+.contacts-list .item:hover,
+.contacts-list .item:focus {
   color: var(--accent-color);
 }
 .contacts-list .item {
   color: var(--second-text-color);
+}
+.main-screen {
+  background-color: var(--bgc-hero);
 }
 .main-title {
   font-size: 44px;
@@ -80,7 +86,6 @@ body {
   text-transform: uppercase;
 }
 .featurys-list .lint-text {
-  font-weight: 400;
   line-height: 1.71;
   color: var(--second-text-color);
 }
@@ -97,22 +102,24 @@ body {
 }
 .our-team-list .lint-text {
   font-size: 16px;
-  font-weight: 400;
   line-height: 1.17;
   color: var(--second-text-color);
+}
+.footer {
+  background-color: var(--bgc-hero);
 }
 .logo .footer-logo-studio {
   color: var(--hero-text-color);
 }
 .address-list .item {
-  font-weight: 400;
   line-height: 1.71;
   text-decoration: none;
-  color: var(--hero-text-color);
+  color: rgba(255, 255, 255, 0.6);
   font-style: normal;
 }
-.address-list .contacts-item {
-  color: rgba(255, 255, 255, 0.6);
+.address-list .item:hover,
+.address-list .item:focus {
+  color: var(--hero-text-color);
 }
 
 /*-------------Портфолио------------*/
@@ -131,7 +138,8 @@ body {
   cursor: pointer;
   margin-right: 8px;
 }
-.filter-button:hover {
+.filter-button:hover,
+.filter-button:focus {
   color: var(--hero-text-color);
   background-color: var(--accent-color);
   box-shadow: 0px 2px 2px 0px #00000021;
@@ -148,7 +156,6 @@ body {
 }
 .portfolio-list-text {
   font-size: 16px;
-  font-weight: 400;
   line-height: 1.88;
   color: var(--second-text-color);
 }
