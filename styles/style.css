@@ -76,7 +76,8 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
-.to-order:hover {
+.to-order:hover,
+.to-order:focus {
   background: #188ce8;
 }
 .featurys-title,
